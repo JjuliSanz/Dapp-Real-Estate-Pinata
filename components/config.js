@@ -1,0 +1,31 @@
+/*
+API Key: 42f80428455dab699947
+API Secret: 0f35863de6046a535becf7ee931a8b6828ae2fb5ff44eb4a39b9df58dcbd90c6
+JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI1NzQ4YjY2YS1mODdiLTQyN2EtYjVlMS1kNjE0NDVkN2FkODIiLCJlbWFpbCI6ImpqdWxpc2FuekBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJpZCI6IkZSQTEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX0seyJpZCI6Ik5ZQzEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiNDJmODA0Mjg0NTVkYWI2OTk5NDciLCJzY29wZWRLZXlTZWNyZXQiOiIwZjM1ODYzZGU2MDQ2YTUzNWJlY2Y3ZWU5MzFhOGI2ODI4YWUyZmI1ZmY0NGViNGEzOWI5ZGY1OGRjYmQ5MGM2IiwiaWF0IjoxNjg0NTk2MzY5fQ.Y5nYZVfk1bGw9apiHijvjtDgl01NHJBVoIZHZWlDwb4
+ */
+
+
+export const pinatakey = '42f80428455dab699947';
+export const pinatasecret = '0f35863de6046a535becf7ee931a8b6828ae2fb5ff44eb4a39b9df58dcbd90c6';
+export const pinatajwt = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI1NzQ4YjY2YS1mODdiLTQyN2EtYjVlMS1kNjE0NDVkN2FkODIiLCJlbWFpbCI6ImpqdWxpc2FuekBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJpZCI6IkZSQTEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX0seyJpZCI6Ik5ZQzEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiNDJmODA0Mjg0NTVkYWI2OTk5NDciLCJzY29wZWRLZXlTZWNyZXQiOiIwZjM1ODYzZGU2MDQ2YTUzNWJlY2Y3ZWU5MzFhOGI2ODI4YWUyZmI1ZmY0NGViNGEzOWI5ZGY1OGRjYmQ5MGM2IiwiaWF0IjoxNjg0NTk2MzY5fQ.Y5nYZVfk1bGw9apiHijvjtDgl01NHJBVoIZHZWlDwb4';
+export const ipfsgateway = 'ENTER_PINATA_GATEWAY_DOMAIN' // Do NOT ADD .mypinata.cloud... just your gateway name.
+
+export const readHeader = {
+    "Content-Type": "application/json",
+  }
+
+export const getHeader = {
+    headers: {
+      pinata_api_key: pinatakey,
+      pinata_secret_api_key: pinatasecret,
+  }
+}
+
+export const sendJsonHeader = {
+    headers: {
+      'Content-Type': 'application/json', 
+      pinata_api_key: pinatakey,
+      pinata_secret_api_key: pinatasecret,
+  }
+}
+
