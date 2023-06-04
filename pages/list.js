@@ -4,7 +4,7 @@ import { ipfsgateway, pinatajwt } from "@/components/config";
 import Image from "next/image";
 
 export default function List() {
-  const [picture, getPicture] = useState("pinatalogo.png");
+  const [picture, getPicture] = useState("/pinatalogo.png");
   const [picCid, getPicCid] = useState("");
 
   async function updatePic(e) {
@@ -104,7 +104,7 @@ export default function List() {
                   color: "black",
                 }}
               />
-            </div>           
+            </div>
             <form className="needs-validation" noValidate>
               <div className="row g-3">
                 <div className="col-sm-2">
@@ -403,18 +403,28 @@ export default function List() {
               </div>
             </div>
             <hr className="my-3" />
-            <div className="row d-flex">
+            <div className="row d-flex img-container">
               <Image
-                className="bd-placeholder-img"
+                className="bd-placeholder-img img-fluid"
                 src={picture}
-                width="100%"
-                height="100%"
+                width={100}
+                height={300}
                 aria-hidden="true"
                 preserveAspectRatio="xMidYMid slice"
                 focusable="false"
                 alt="House"
+                layout="responsive"
               />
             </div>
+            <style jsx>{`
+              .img-container {
+                width: 100%;
+              }
+              .img-fluid {
+                width: 100%;
+                height: auto;
+              }
+            `}</style>
             <button
               className="w-100 btn btn-primary btn-md mt-4"
               style={{

@@ -36,6 +36,9 @@ export default function Home() {
                         style={{ maxWidth: "500px", maxHeight: "500px" }}
                         crossOrigin="anonymous"
                         alt="House"
+                        layout="responsive"
+                        width={500}
+                        height={500}
                       />
                       <ul className="d-flex list-unstyled mt-auto">
                         <li className="d-flex align-items-center me-1 mt-1">
